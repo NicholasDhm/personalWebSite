@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebProject 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <div class="nav">
+      <div class="random_space"></div>
+      <div class="nav_item" onclick="navItemClick('about')">About</div>
+      <div class="nav_item" onclick="navItemClick('interests')">Interests</div>
+      <div class="nav_item"onclick="navItemClick('projects')">Projects</div>
+      <div class="nav_item"onclick="navItemClick('contact')">Contact</div>
+      <div class="nav_item last"><a href="html_dict.html">HTML Dict</a></div>
+    </div>
+    <div class="toggle" onclick="toggleSidebar()">-></div>
+  </aside>
+
+  <section id="bodyContainer">
+    <header>
+      <h1>Welcome, this is my personal web page!</h1>
+    </header>
+    <div class="container">
+      <section id="about">
+        <h2>About me</h2>
+        <p>My name is Nick and I'm a student at UFSC.</p>
+      </section>
+      <section id="interests" class="empty">
+        <h2>Interests</h2>
+        <p>I like programming, playing games and watching movies.</p>
+      </section>
+      <section id="projects" class="empty">
+        <h2>Projects</h2>
+        <p>Check out my projects on <a href="">GitHub</a>.</p>
+      </section>
+      <section id="contact" class="empty">
+        <h2>Contact</h2>
+        <p>You can reach me on <a href="https://www.linkedin.com/in/nick">LinkedIn</a>.</p>
+      </section>
+      <footer>
+        <address>
+          <p>
+            Nick<br>
+          </p>
+        </address>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('expanded');
+    // const section = document.getElementById('bodyContainer');
+    // section.classList.toggle('expanded');
+  }
+
+  function navItemClick(route) {
+    const sections = document.querySelectorAll('.container section[id]');
+    sections.forEach(section => {
+      if (section.id === route) {
+        section.classList.remove('empty');
+      } else {
+        section.classList.add('empty');
+      }
+    });
+    const targetSection = document.getElementById(route);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+
+<!-- Conteúdo para a página
+A página criada deve conter:
+Definição do idioma como português brasileiro
+Título na aba do navegador
+Ícone na aba do navegador
+Cabeçalho com link para navegação pelo conteúdo da página
+Utilize as tags <header> e <nav>
+Verifique como criar links internos para elementos da sua página
+Uma barra lateral com informações relevantes
+Utilize a tag <aside>
+Exemplos de informações relevantes:
+Seu nome
+Sua foto
+Seu curso (SIN/CCO/etc) (com um link para a página do curso. . . )
+Seus interesses, linguagens e tecnologias preferidas
+Link para seu github
+Conteúdo para a página
+Um rodapé com informações de contato e links úteis (por ex. seu linkedin)
+Tente utilizar a tag <address>
+Uma área reservada para os conteúdos da página
+Utilize a tag <main> e tags <section>
+Nestes conteúdos coloque as seguintes sessões:
+Sobre mim
+Interesses
+Disciplinas cursadas
+Links para projetos públicos (se houver algum projeto seu no github ou outro
+serviço similar)
+Adicione outras informações que julgar importante!
+Dicionário de elementos HTML
+Crie uma segunda página contendo um dicionário de elementos HTML
+Nomeie a segunda página como html_dict.html
+Em um dos itens de navegação da página index.html, crie um link que leve para
+a página html_dict.html
+Adicione à página html_dict.html um dicionário de tags contendo as tags que
+você utilizou para definir o html de ambas as páginas (index.html e
+html_dict.html)
+Como entrada (chave) do dicionário, use o nome da tag
+Como valor, descreve para que serve a tag utilizada
+Estilize sua página
+Aproveite para estabelecer um layout para a sua página e busque como utilizar o
+CSS para chegar ao layout estabelecido
+Pense em alguma maneira criativa de estilizar a sua página, utilizando os seletores
+do CSS que estudamos
+Procure saber mais sobre as propriedades que podem ser estilizadas
+Vocês ainda aprenderão mais sobre CSS na aula 05
+Assim, poderão melhorar o layout da página na próxima aula prática (aula 06)
+Mantenha seu projeto salvo
+Preferencialmente, crie um projeto no git para manter sua página pessoal
+Se acostumem a criar repositórios até mesmo para pequenos projetos e exercícios de
+aula
+É muito mais simples do que ficar enviando arquivos por e-mail. . .
+A página desenvolvida poderá ser entregue na atividade avaliada 04
+Data de entrega: 15/04 (até 18:30).
+Continue melhorando a sua página pessoal e, futuramente, publique-a!
+Sem o dicionário de HTML -->

@@ -83,8 +83,8 @@ aside {
   }
 
   .container {
-    height: 90%;
-    width: inherit;
+    height: 85vh;
+    /* width: inherit; */
     padding: 0 60px;
     margin: 0;
     display: flex;

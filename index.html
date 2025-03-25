@@ -7,43 +7,71 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <aside id="sidebar">
+  <aside>
     <div class="nav">
-      <div class="random_space"></div>
+      <div class="random_space">
+        <div class="profile_img"></div>
+      </div>
       <div class="nav_item" onclick="navItemClick('about')">About</div>
       <div class="nav_item" onclick="navItemClick('interests')">Interests</div>
       <div class="nav_item"onclick="navItemClick('projects')">Projects</div>
       <div class="nav_item"onclick="navItemClick('contact')">Contact</div>
       <div class="nav_item last"><a href="html_dict.html">HTML Dict</a></div>
     </div>
-    <div class="toggle" onclick="toggleSidebar()">-></div>
+    <!-- <div class="toggle" div> -->
   </aside>
 
-  <section id="bodyContainer">
+  <section class="section_container">
     <header>
       <h1>Welcome, this is my personal web page!</h1>
     </header>
     <div class="container">
       <section id="about">
         <h2>About me</h2>
-        <p>My name is Nick and I'm a student at UFSC.</p>
+        <p>Hello, I'm Nick! A Full Stack Developer with a passion for technology, business, and finance!</p>
+        <p>My journey in tech started at Atomus, where I began as a Junior Frontend Developer and grew into a Full Stack role. Working on real-world projects from the start gave me hands-on experience in building scalable applications and solving complex problems.</p>
+        <p>Along the way, I pursued a degree in IT at UFSC (Federal University of Santa Catarina), refining my technical skills and expanding my knowledge beyond development. Beyond coding, I'm deeply interested in entrepreneurship and investing, always looking for ways to merge technology with business.</p>
+        <p>My goal is to achieve financial freedom—leveraging software, startups, and investments to create long-term wealth. Whether it's launching projects, optimizing investment strategies, or researching new opportunities, I'm always working towards growth and innovation..</p>
       </section>
       <section id="interests" class="empty">
         <h2>Interests</h2>
-        <p>I like programming, playing games and watching movies.</p>
+        <p>I'm deeply interested in software development, startups, and financial markets. I enjoy working on projects that combine tech and business, especially those that drive automation and efficiency. In my free time, I explore real estate investing, personal finance strategies, and ways to achieve financial freedom.</p>
       </section>
-      <section id="projects" class="empty">
+      <section id="projects" class="empty projects">
         <h2>Projects</h2>
-        <p>Check out my projects on <a href="">GitHub</a>.</p>
+        <li>
+          <strong>Boat-Share</strong>
+          - A booking system for shared boats with shared reservations, designed to optimize scheduling and accessibility. Built with React Native, using Typescript and NodeJs.
+        </li>
+        <li>
+          <strong>Finance App </strong>
+          - A private project focused on financial tracking and investment management, aiming to streamline personal finance decisions. Also built with React Native, using Typescript and NodeJs.
+        </li>        
+        <li>
+          <strong>Cash Flow & Investment Spreadsheet</strong>
+          - A comprehensive personal tool I use for myself to track income, expenses, investments, and financial projections.
+        </li>        
+        <li>
+          <strong>Real Estate Research</strong>
+          - Conducting side research for a Real Estate's financial products and investment strategies to gain insights into market trends and opportunities.
+        </li>
+        <p>Check out my projects on <a href="https://www.github.com/NicholasDhm">GitHub</a>.</p>
       </section>
       <section id="contact" class="empty">
         <h2>Contact</h2>
-        <p>You can reach me on <a href="https://www.linkedin.com/in/nick">LinkedIn</a>.</p>
+        <p>Want to connect? Feel free to reach out!</p>
+        <p>📧 Email: nickderham.ufsc@gmail.com</p>
+        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/nick">NicholasDerham</a>.</p>
+        <p>💻 GitHub: <a href="https://www.github.com/NicholasDhm">NicholasDhm</a>.</p>
       </section>
       <footer>
         <address>
           <p>
-            Nick<br>
+            Nicholas Derham<br>
+            📍 Florianópolis, Brazil<br>
+            📧 <a href="mailto:nickderham.ufsc@gmail.com">nickderham.ufsc@gmail.com</a><br>
+            💼 <a href="https://www.linkedin.com/in/nick">LinkedIn</a><br>
+            💻 <a href="https://www.github.com/NicholasDhm">GitHub</a>
           </p>
         </address>
       </footer>
@@ -53,13 +81,6 @@
 </html>
 
 <script>
-  function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('expanded');
-    // const section = document.getElementById('bodyContainer');
-    // section.classList.toggle('expanded');
-  }
-
   function navItemClick(route) {
     const sections = document.querySelectorAll('.container section[id]');
     sections.forEach(section => {

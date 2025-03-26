@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebProject 1</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <aside>
+    <img src="C:\Users\nickd\Downloads\nick_whatsapp_photo.jpg"/>
     <div class="nav">
-      <div class="random_space">
-        <div class="profile_img"></div>
-      </div>
-      <div class="nav_item" onclick="navItemClick('about')">About</div>
-      <div class="nav_item" onclick="navItemClick('interests')">Interests</div>
-      <div class="nav_item"onclick="navItemClick('projects')">Projects</div>
-      <div class="nav_item"onclick="navItemClick('contact')">Contact</div>
-      <div class="nav_item last"><a href="html_dict.html">HTML Dict</a></div>
+      <div class="nav_item" onclick="navItemClick('about')"><i class="fas fa-user"></i> About</div>
+      <div class="nav_item" onclick="navItemClick('interests')"><i class="fas fa-heart"></i> Interests</div>
+      <div class="nav_item" onclick="navItemClick('projects')"><i class="fas fa-project-diagram"></i> Projects</div>
+      <div class="nav_item" onclick="navItemClick('education')"><i class="fas fa-graduation-cap"></i> Education</div>
+      <div class="nav_item" onclick="navItemClick('contact')"><i class="fas fa-envelope"></i> Contact</div>
+      <div class="nav_item last"><a href="html_dict.html"><i class="fas fa-book"></i> Dicionário HTML</a></div>
     </div>
-    <!-- <div class="toggle" div> -->
   </aside>
 
-  <section class="section_container">
+  <section class="data_container">
     <header>
       <h1>Welcome, this is my personal web page!</h1>
     </header>
@@ -33,44 +32,95 @@
         <p>Along the way, I pursued a degree in IT at UFSC (Federal University of Santa Catarina), refining my technical skills and expanding my knowledge beyond development. Beyond coding, I'm deeply interested in entrepreneurship and investing, always looking for ways to merge technology with business.</p>
         <p>My goal is to achieve financial freedom—leveraging software, startups, and investments to create long-term wealth. Whether it's launching projects, optimizing investment strategies, or researching new opportunities, I'm always working towards growth and innovation..</p>
       </section>
-      <section id="interests" class="empty">
+      
+      <section id="interests">
         <h2>Interests</h2>
         <p>I'm deeply interested in software development, startups, and financial markets. I enjoy working on projects that combine tech and business, especially those that drive automation and efficiency. In my free time, I explore real estate investing, personal finance strategies, and ways to achieve financial freedom.</p>
       </section>
-      <section id="projects" class="empty projects">
+      
+      <section id="projects">
         <h2>Projects</h2>
-        <li>
-          <strong>Boat-Share</strong>
-          - A booking system for shared boats with shared reservations, designed to optimize scheduling and accessibility. Built with React Native, using Typescript and NodeJs.
-        </li>
-        <li>
-          <strong>Finance App </strong>
-          - A private project focused on financial tracking and investment management, aiming to streamline personal finance decisions. Also built with React Native, using Typescript and NodeJs.
-        </li>        
-        <li>
-          <strong>Cash Flow & Investment Spreadsheet</strong>
-          - A comprehensive personal tool I use for myself to track income, expenses, investments, and financial projections.
-        </li>        
-        <li>
-          <strong>Real Estate Research</strong>
-          - Conducting side research for a Real Estate's financial products and investment strategies to gain insights into market trends and opportunities.
-        </li>
-        <p>Check out my projects on <a href="https://www.github.com/NicholasDhm">GitHub</a>.</p>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>Boat-Share</h3>
+            <p>A booking system for shared boats with shared reservations, designed to optimize scheduling and accessibility.</p>
+            <span>React Native, TypeScript, Node.js</span>
+          </div>
+          <div class="project-card">
+            <h3>Finance App</h3>
+            <p>A private project focused on financial tracking and investment management, aiming to streamline personal finance decisions.</p>
+            <span>React Native, TypeScript, Node.js</span>
+          </div>
+          <div class="project-card">
+            <h3>Cash Flow & Investment Spreadsheet</h3>
+            <p>A comprehensive personal tool I use for myself to track income, expenses, investments, and financial projections.</p>
+            <span>Excel, Financial Modeling</span>
+          </div>
+          <div class="project-card">
+            <h3>Real Estate Research</h3>
+            <p>Conducting side research for real estate financial products and investment strategies to gain insights into market trends and opportunities.</p>
+            <span>Market Analysis, Financial Research</span>
+          </div>
+        </div>
+        <p class="github-link">
+          Check out my projects on <a href="https://www.github.com/NicholasDhm">GitHub</a>.
+        </p>
+      </section>      
+      
+      <section id="education">
+        <h3>Education Page (Content)</h3>
+        <h4>🎓 University Education</h4>
+        <ul>
+          <li>
+            <strong>Federal University of Santa Catarina (UFSC)</strong> - IT Degree (Ongoing)
+          </li>
+          <ul>
+            <li>Expanding technical knowledge in software development, data structures, and system design.</li>
+            <li>Balancing academic studies with real-world experience in tech and business.</li>
+          </ul>
+        </ul>
+
+        <h4>📜 Certifications & Courses</h4>
+        <ul>
+          <li>
+            <strong>Udemy - SQL & RDBMS Certification</strong>
+            <ul>
+              <li>Mastered relational database concepts, normalization, and SQL queries.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Angular University - Frontend Development</strong>
+            <ul>
+              <li>Learned Angular fundamentals before transitioning into professional work at Atomus.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>🏢 Professional Learning at Atomus</h4>
+        <ul>
+          <li><strong>SQL & RDBMS</strong> - Applied database management skills in real projects.</li>
+          <li><strong>Angular</strong> - Built production-grade frontend applications.</li>
+          <li><strong>C#</strong> - Developed and maintained backend services in a full-stack role.</li>
+        </ul>
       </section>
-      <section id="contact" class="empty">
+
+      <!-- <section id="contact">
         <h2>Contact</h2>
         <p>Want to connect? Feel free to reach out!</p>
         <p>📧 Email: nickderham.ufsc@gmail.com</p>
-        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/nick">NicholasDerham</a>.</p>
+        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/NicholasDerham">NicholasDerham</a>.</p>
         <p>💻 GitHub: <a href="https://www.github.com/NicholasDhm">NicholasDhm</a>.</p>
-      </section>
-      <footer>
+      </section> -->
+      
+      <footer id="contact">
+        <h2>Contact</h2>
         <address>
+          <p>Want to connect? Feel free to reach out!</p>
           <p>
             Nicholas Derham<br>
             📍 Florianópolis, Brazil<br>
             📧 <a href="mailto:nickderham.ufsc@gmail.com">nickderham.ufsc@gmail.com</a><br>
-            💼 <a href="https://www.linkedin.com/in/nick">LinkedIn</a><br>
+            💼 <a href="https://www.linkedin.com/in/NicholasDerham">LinkedIn</a><br>
             💻 <a href="https://www.github.com/NicholasDhm">GitHub</a>
           </p>
         </address>
@@ -82,16 +132,16 @@
 
 <script>
   function navItemClick(route) {
-    const sections = document.querySelectorAll('.container section[id]');
-    sections.forEach(section => {
-      if (section.id === route) {
-        section.classList.remove('empty');
-      } else {
-        section.classList.add('empty');
-      }
-    });
-    // const targetSection = document.getElementById(route);
-    // targetSection.scrollIntoView({ behavior: 'smooth' });
+    // const sections = document.querySelectorAll('.container section[id]');
+    // sections.forEach(section => {
+    //   if (section.id === route) {
+    //     section.classList.remove('empty');
+    //   } else {
+    //     section.classList.add('empty');
+    //   }
+    // });
+    const targetSection = document.getElementById(route);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
   }
 </script>
 

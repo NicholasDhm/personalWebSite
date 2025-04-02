@@ -15,6 +15,7 @@
       <div class="nav_item" onclick="navItemClick('interests')"><i class="fas fa-heart"></i> Interests</div>
       <div class="nav_item" onclick="navItemClick('projects')"><i class="fas fa-project-diagram"></i> Projects</div>
       <div class="nav_item" onclick="navItemClick('education')"><i class="fas fa-graduation-cap"></i> Education</div>
+      <div class="nav_item" onclick="navItemClick('skills')"><i class="fas fa-tools"></i> Skills</div>
       <div class="nav_item" onclick="navItemClick('contact')"><i class="fas fa-envelope"></i> Contact</div>
       <div class="nav_item last"><a href="html_dict.html"><i class="fas fa-book"></i> Dicionário HTML</a></div>
     </div>
@@ -26,16 +27,35 @@
     </header>
     <div class="container">
       <section id="about">
-        <h2>About me</h2>
-        <p>Hello, I'm Nick! A Full Stack Developer with a passion for technology, business, and finance!</p>
-        <p>My journey in tech started at Atomus, where I began as a Junior Frontend Developer and grew into a Full Stack role. Working on real-world projects from the start gave me hands-on experience in building scalable applications and solving complex problems.</p>
-        <p>Along the way, I pursued a degree in IT at UFSC (Federal University of Santa Catarina), refining my technical skills and expanding my knowledge beyond development. Beyond coding, I'm deeply interested in entrepreneurship and investing, always looking for ways to merge technology with business.</p>
-        <p>My goal is to achieve financial freedom—leveraging software, startups, and investments to create long-term wealth. Whether it's launching projects, optimizing investment strategies, or researching new opportunities, I'm always working towards growth and innovation..</p>
+        <h2>About Me</h2>
+        <div class="container-padding">
+          <div class="about-container">
+            <p>Hi! I'm a tech enthusiast with a deep passion for software development and problem-solving. I enjoy exploring new technologies, tackling complex challenges, and continuously improving my skill set.</p>
+            <p>My journey in technology has led me to full-stack development, where I focus on building efficient, scalable, and innovative applications. I thrive in collaborative environments, working with talented teams to turn ideas into reality.</p>
+            <p>Beyond coding, I'm always seeking new ways to grow—whether through learning, networking, or taking on exciting projects that push my limits.</p>
+          </div>
+        </div>
       </section>
-      
+  
       <section id="interests">
         <h2>Interests</h2>
-        <p>I'm deeply interested in software development, startups, and financial markets. I enjoy working on projects that combine tech and business, especially those that drive automation and efficiency. In my free time, I explore real estate investing, personal finance strategies, and ways to achieve financial freedom.</p>
+        <div class="container-padding">
+          <div class="interests-container">
+            <p>Technology is at the core of my interests, but my curiosity extends beyond coding. I have a keen interest in market trends, business strategy, and entrepreneurship, always exploring ways to merge tech and business innovation.</p>
+            <p>I'm fascinated by how startups grow, how data-driven decisions shape industries, and how technology is constantly evolving. Staying ahead of the curve with emerging trends keeps me motivated to push boundaries.</p>
+            <p>Besides work, I love continuous learning—whether it's through books, courses, or real-world experiences. Expanding my knowledge fuels my drive to innovate and create meaningful solutions.</p>
+          </div>
+          <div class="interests-items-container">
+            <div class="interest-item"><i class="fas fa-laptop-code"></i> Software Development</div>
+            <div class="interest-item"><i class="fas fa-chart-line"></i> Market Analysis</div>
+            <div class="interest-item"><i class="fas fa-rocket"></i> Startups & Entrepreneurship</div>
+            <div class="interest-item"><i class="fas fa-book"></i> Continuous Learning</div>
+            <div class="interest-item"><i class="fas fa-coins"></i> Investment Strategies</div>
+            <div class="interest-item"><i class="fas fa-money-bill-wave"></i> Financial Planning</div>
+            <div class="interest-item"><i class="fas fa-user-tie"></i> Business Performance Optimization</div>
+            <div class="interest-item"><i class="fas fa-cogs"></i> Automation & Efficiency</div>
+          </div>
+        </div>
       </section>
       
       <section id="projects">
@@ -63,45 +83,59 @@
           </div>
         </div>
         <p class="github-link">
-          Check out my projects on <a href="https://www.github.com/NicholasDhm">GitHub</a>.
+          Check out my projects on <a href="https://www.github.com/NicholasDhm" class="accent-link">GitHub</a>.
         </p>
-      </section>      
-      
+      </section>
+
       <section id="education">
-        <h3>Education Page (Content)</h3>
-        <h4>🎓 University Education</h4>
-        <ul>
-          <li>
-            <strong>Federal University of Santa Catarina (UFSC)</strong> - IT Degree (Ongoing)
-          </li>
-          <ul>
-            <li>Expanding technical knowledge in software development, data structures, and system design.</li>
-            <li>Balancing academic studies with real-world experience in tech and business.</li>
-          </ul>
-        </ul>
-
-        <h4>📜 Certifications & Courses</h4>
-        <ul>
-          <li>
-            <strong>Udemy - SQL & RDBMS Certification</strong>
+        <h2>Education</h2>
+        <div class="education-container">
+          <div class="education-card">
+            <div class="education-header">
+              <i class="fas fa-university"></i>
+              <h3>Federal University of Santa Catarina (UFSC)</h3>
+            </div>
+            <p><strong>IT Degree (Ongoing)</strong></p>
+            <p>Expanding knowledge in software development, data structures, and system design while balancing real-world experience.</p>
+          </div>
+          
+          <div class="education-card">
+            <div class="education-header">
+              <i class="fas fa-certificate"></i>
+              <h3>Certifications & Courses</h3>
+            </div>
             <ul>
-              <li>Mastered relational database concepts, normalization, and SQL queries.</li>
+              <li><strong>Udemy - SQL & RDBMS Certification:</strong> Mastered relational database concepts, normalization, and SQL queries.</li>
+              <li><strong>Angular University - Frontend Development:</strong> Learned Angular fundamentals before transitioning into professional work at Atomus.</li>
             </ul>
-          </li>
-          <li>
-            <strong>Angular University - Frontend Development</strong>
+          </div>
+          
+          <div class="education-card">
+            <div class="education-header">
+              <i class="fas fa-briefcase"></i>
+              <h3>Professional Learning at Atomus</h3>
+            </div>
             <ul>
-              <li>Learned Angular fundamentals before transitioning into professional work at Atomus.</li>
+              <li><strong>SQL & RDBMS:</strong> Applied database management skills in real projects.</li>
+              <li><strong>Angular:</strong> Built production-grade frontend applications.</li>
+              <li><strong>C#:</strong> Developed and maintained backend services in a full-stack role.</li>
             </ul>
-          </li>
-        </ul>
-
-        <h4>🏢 Professional Learning at Atomus</h4>
-        <ul>
-          <li><strong>SQL & RDBMS</strong> - Applied database management skills in real projects.</li>
-          <li><strong>Angular</strong> - Built production-grade frontend applications.</li>
-          <li><strong>C#</strong> - Developed and maintained backend services in a full-stack role.</li>
-        </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-flex">
+          <div class="skill-block">JavaScript</div>
+          <div class="skill-block">React & React Native</div>
+          <div class="skill-block">TypeScript</div>
+          <div class="skill-block">Node.js</div>
+          <div class="skill-block">SQL & Databases</div>
+          <div class="skill-block">Financial Modeling</div>
+          <div class="skill-block">Market Analysis</div>
+          <div class="skill-block">Entrepreneurship</div>
+        </div>
       </section>
 
       <!-- <section id="contact">

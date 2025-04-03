@@ -8,22 +8,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+  <!-- <header>
+  </header> -->
+
   <aside>
     <img src="C:\Users\nickd\Downloads\nick_whatsapp_photo.jpg"/>
-    <div class="nav">
-      <div class="nav_item" onclick="navItemClick('about')"><i class="fas fa-user"></i> About</div>
-      <div class="nav_item" onclick="navItemClick('interests')"><i class="fas fa-heart"></i> Interests</div>
-      <div class="nav_item" onclick="navItemClick('projects')"><i class="fas fa-project-diagram"></i> Projects</div>
-      <div class="nav_item" onclick="navItemClick('education')"><i class="fas fa-graduation-cap"></i> Education</div>
-      <div class="nav_item" onclick="navItemClick('skills')"><i class="fas fa-tools"></i> Skills</div>
-      <div class="nav_item" onclick="navItemClick('contact')"><i class="fas fa-envelope"></i> Contact</div>
-      <div class="nav_item last"><a href="html_dict.html"><i class="fas fa-book"></i> Dicionário HTML</a></div>
+    <div>
+      <h2>Nicholas Derham</h2>
+      <p>Software Developer @ Atomus Ltd</p>
     </div>
   </aside>
 
   <section class="data_container">
     <header>
-      <h1>Welcome, this is my personal web page!</h1>
+      <h1>My Portfolio</h1>
+      <nav>
+        <div class="nav_item" onclick="navItemClick('about')"><i class="fas fa-user"></i> About</div>
+        <div class="nav_item" onclick="navItemClick('interests')"><i class="fas fa-heart"></i> Interests</div>
+        <div class="nav_item" onclick="navItemClick('projects')"><i class="fas fa-project-diagram"></i> Projects</div>
+        <div class="nav_item" onclick="navItemClick('education')"><i class="fas fa-graduation-cap"></i> Education</div>
+        <div class="nav_item" onclick="navItemClick('skills')"><i class="fas fa-tools"></i> Skills</div>
+        <div class="nav_item" onclick="navItemClick('contact')"><i class="fas fa-envelope"></i> Contact</div>
+        <div class="nav_item last"><a href="html_dict.html"><i class="fas fa-book"></i> Dicionário HTML</a></div>
+      </nav>
     </header>
     <div class="container">
       <section id="about">
@@ -62,8 +69,13 @@
         <h2>Projects</h2>
         <div class="projects-container">
           <div class="project-card">
-            <h3>Boat-Share</h3>
-            <p>A booking system for shared boats with shared reservations, designed to optimize scheduling and accessibility.</p>
+            <h3>Boat-Share Web</h3>
+            <p>A web booking system for shared boats with shared reservations, designed to optimize scheduling and accessibility.</p>
+            <span>Angular, TypeScript, C#, AWS</span>
+          </div>
+          <div class="project-card">
+            <h3>Boat-Share Mobile</h3>
+            <p>A mobile version of Boat-Share Web.</p>
             <span>React Native, TypeScript, Node.js</span>
           </div>
           <div class="project-card">
@@ -73,7 +85,7 @@
           </div>
           <div class="project-card">
             <h3>Cash Flow & Investment Spreadsheet</h3>
-            <p>A comprehensive personal tool I use for myself to track income, expenses, investments, and financial projections.</p>
+            <p>A comprehensive personal tool I use for myself and have made for others to track income, expenses, investments, and financial projections.</p>
             <span>Excel, Financial Modeling</span>
           </div>
           <div class="project-card">

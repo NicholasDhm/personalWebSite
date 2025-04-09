@@ -15,7 +15,12 @@
     <img src="C:\Users\nickd\Downloads\nick_whatsapp_photo.jpg"/>
     <div>
       <h2>Nicholas Derham</h2>
-      <p>Software Developer @ Atomus Ltd</p>
+      <span>Software Developer
+        <p>@ Atomus Ltd</p>
+      </span>
+      <p>Majoring in Information Systems
+        <a href="https://sin.ufsc.br/" target="_blank">@ UFSC</a>  
+      </p>
     </div>
   </aside>
 
@@ -141,6 +146,8 @@
         <div class="skills-flex">
           <div class="skill-block">JavaScript</div>
           <div class="skill-block">React & React Native</div>
+          <div class="skill-block">Angular</div>
+          <div class="skill-block">C#</div>
           <div class="skill-block">TypeScript</div>
           <div class="skill-block">Node.js</div>
           <div class="skill-block">SQL & Databases</div>
@@ -149,14 +156,6 @@
           <div class="skill-block">Entrepreneurship</div>
         </div>
       </section>
-
-      <!-- <section id="contact">
-        <h2>Contact</h2>
-        <p>Want to connect? Feel free to reach out!</p>
-        <p>📧 Email: nickderham.ufsc@gmail.com</p>
-        <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/NicholasDerham">NicholasDerham</a>.</p>
-        <p>💻 GitHub: <a href="https://www.github.com/NicholasDhm">NicholasDhm</a>.</p>
-      </section> -->
       
       <footer id="contact">
         <h2>Contact</h2>
@@ -178,14 +177,6 @@
 
 <script>
   function navItemClick(route) {
-    // const sections = document.querySelectorAll('.container section[id]');
-    // sections.forEach(section => {
-    //   if (section.id === route) {
-    //     section.classList.remove('empty');
-    //   } else {
-    //     section.classList.add('empty');
-    //   }
-    // });
     const targetSection = document.getElementById(route);
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }

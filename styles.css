@@ -63,6 +63,17 @@ aside {
       font-size: 14px;
       text-align: center;
     }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   img {

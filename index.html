@@ -1,148 +1,146 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Meu Portfólio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <!-- <header>
-  </header> -->
-
-  <aside>
-    <img src="C:\Users\nickd\Downloads\nick_whatsapp_photo.jpg"/>
-    <div>
+  <aside class="sidebar">
+    <div class="img_container">
+      <img src="WhatsApp Image 2025-04-13 at 19.54.33_1d453394.jpg" alt="Foto de Nicholas Derham">
+    </div>
+    <div class="profile-info">
       <h2>Nicholas Derham</h2>
-      <span>Software Developer
-        <p>@ Atomus Ltd</p>
-      </span>
-      <p>Majoring in Information Systems
-        <a href="https://sin.ufsc.br/" target="_blank">@ UFSC</a>  
-      </p>
+      <p>Desenvolvedor de Software na <a href="https://atomus.com/" target="_blank">Atomus Ltd</a></p>
+      <p>Graduando em Sistemas de Informação na <a href="https://sin.ufsc.br/" target="_blank">UFSC</a></p>
     </div>
   </aside>
 
-  <section class="data_container">
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <div class="nav_item" onclick="navItemClick('about')"><i class="fas fa-user"></i> About</div>
-        <div class="nav_item" onclick="navItemClick('interests')"><i class="fas fa-heart"></i> Interests</div>
-        <div class="nav_item" onclick="navItemClick('projects')"><i class="fas fa-project-diagram"></i> Projects</div>
-        <div class="nav_item" onclick="navItemClick('education')"><i class="fas fa-graduation-cap"></i> Education</div>
-        <div class="nav_item" onclick="navItemClick('skills')"><i class="fas fa-tools"></i> Skills</div>
-        <div class="nav_item" onclick="navItemClick('contact')"><i class="fas fa-envelope"></i> Contact</div>
-        <div class="nav_item last"><a href="html_dict.html"><i class="fas fa-book"></i> Dicionário HTML</a></div>
+  <div class="main-content">
+    <header class="main-header">
+      <h1>Meu Portfólio</h1>
+      <nav class="navigation">
+        <a class="nav_item" href="#about"><i class="fas fa-user"></i> Sobre</a>
+        <a class="nav_item" href="#interests"><i class="fas fa-heart"></i> Interesses</a>
+        <a class="nav_item" href="#projects"><i class="fas fa-project-diagram"></i> Projetos</a>
+        <a class="nav_item" href="#education"><i class="fas fa-graduation-cap"></i> Educação</a>
+        <a class="nav_item" href="#skills"><i class="fas fa-tools"></i> Habilidades</a>
+        <a class="nav_item" href="#contact"><i class="fas fa-envelope"></i> Contato</a>
+        <a class="nav_item" href="html_dict.html"><i class="fas fa-book"></i> Dicionário HTML</a>
       </nav>
     </header>
-    <div class="container">
+
+    <main class="content">
       <section id="about">
-        <h2>About Me</h2>
-        <div class="container-padding">
-          <div class="about-container">
-            <p>Hi! I'm a tech enthusiast with a deep passion for software development and problem-solving. I enjoy exploring new technologies, tackling complex challenges, and continuously improving my skill set.</p>
-            <p>My journey in technology has led me to full-stack development, where I focus on building efficient, scalable, and innovative applications. I thrive in collaborative environments, working with talented teams to turn ideas into reality.</p>
-            <p>Beyond coding, I'm always seeking new ways to grow—whether through learning, networking, or taking on exciting projects that push my limits.</p>
-          </div>
+        <h2>Sobre Mim</h2>
+        <div class="content-container">
+          <p>Olá! Sou apaixonado por tecnologia e desenvolvimento de software. Tenho grande interesse em explorar novas tecnologias, solucionar problemas complexos e sempre aprimorar minhas habilidades.</p>
+          <p>Minha jornada na área me levou ao desenvolvimento full-stack, focado na construção de aplicações eficientes, escaláveis e inovadoras. Adoro trabalhar em equipe e transformar ideias em realidade.</p>
+          <p>Fora do código, estou sempre buscando novas formas de aprendizado, networking e projetos desafiadores que expandam meus limites.</p>
         </div>
       </section>
-  
+
       <section id="interests">
-        <h2>Interests</h2>
-        <div class="container-padding">
-          <div class="interests-container">
-            <p>Technology is at the core of my interests, but my curiosity extends beyond coding. I have a keen interest in market trends, business strategy, and entrepreneurship, always exploring ways to merge tech and business innovation.</p>
-            <p>I'm fascinated by how startups grow, how data-driven decisions shape industries, and how technology is constantly evolving. Staying ahead of the curve with emerging trends keeps me motivated to push boundaries.</p>
-            <p>Besides work, I love continuous learning—whether it's through books, courses, or real-world experiences. Expanding my knowledge fuels my drive to innovate and create meaningful solutions.</p>
-          </div>
-          <div class="interests-items-container">
-            <div class="interest-item"><i class="fas fa-laptop-code"></i> Software Development</div>
-            <div class="interest-item"><i class="fas fa-chart-line"></i> Market Analysis</div>
-            <div class="interest-item"><i class="fas fa-rocket"></i> Startups & Entrepreneurship</div>
-            <div class="interest-item"><i class="fas fa-book"></i> Continuous Learning</div>
-            <div class="interest-item"><i class="fas fa-coins"></i> Investment Strategies</div>
-            <div class="interest-item"><i class="fas fa-money-bill-wave"></i> Financial Planning</div>
-            <div class="interest-item"><i class="fas fa-user-tie"></i> Business Performance Optimization</div>
-            <div class="interest-item"><i class="fas fa-cogs"></i> Automation & Efficiency</div>
+        <h2>Interesses</h2>
+        <div class="content-container">
+          <p>Embora a tecnologia seja meu foco principal, minha curiosidade se estende além do desenvolvimento. Tenho interesse em tendências de mercado, estratégias empresariais e empreendedorismo, sempre buscando a intersecção entre tecnologia e inovação nos negócios.</p>
+          <div class="interests-items">
+            <div class="interest-item"><i class="fas fa-laptop-code"></i> Desenvolvimento de Software</div>
+            <div class="interest-item"><i class="fas fa-chart-line"></i> Análise de Mercado</div>
+            <div class="interest-item"><i class="fas fa-rocket"></i> Startups & Empreendedorismo</div>
+            <div class="interest-item"><i class="fas fa-book"></i> Aprendizado Contínuo</div>
+            <div class="interest-item"><i class="fas fa-coins"></i> Estratégias de Investimento</div>
+            <div class="interest-item"><i class="fas fa-money-bill-wave"></i> Planejamento Financeiro</div>
+            <div class="interest-item"><i class="fas fa-user-tie"></i> Otimização de Performance Empresarial</div>
+            <div class="interest-item"><i class="fas fa-cogs"></i> Automação & Eficiência</div>
           </div>
         </div>
       </section>
-      
+
       <section id="projects">
-        <h2>Projects</h2>
+        <h2>Projetos</h2>
         <div class="projects-container">
           <div class="project-card">
             <h3>Boat-Share Web</h3>
-            <p>A web booking system for shared boats with shared reservations, designed to optimize scheduling and accessibility.</p>
+            <p>Sistema de reservas online para compartilhamento de barcos, otimizado para agendamento e acessibilidade.</p>
             <span>Angular, TypeScript, C#, AWS</span>
           </div>
           <div class="project-card">
             <h3>Boat-Share Mobile</h3>
-            <p>A mobile version of Boat-Share Web.</p>
+            <p>Versão mobile do Boat-Share Web.</p>
             <span>React Native, TypeScript, Node.js</span>
           </div>
           <div class="project-card">
             <h3>Finance App</h3>
-            <p>A private project focused on financial tracking and investment management, aiming to streamline personal finance decisions.</p>
+            <p>Aplicativo privado para controle financeiro e gestão de investimentos, facilitando decisões financeiras pessoais.</p>
             <span>React Native, TypeScript, Node.js</span>
           </div>
           <div class="project-card">
-            <h3>Cash Flow & Investment Spreadsheet</h3>
-            <p>A comprehensive personal tool I use for myself and have made for others to track income, expenses, investments, and financial projections.</p>
-            <span>Excel, Financial Modeling</span>
+            <h3>Planilha de Fluxo de Caixa & Investimentos</h3>
+            <p>Ferramenta completa para controle de receitas, despesas, investimentos e projeções financeiras.</p>
+            <span>Excel, Modelagem Financeira</span>
           </div>
           <div class="project-card">
-            <h3>Real Estate Research</h3>
-            <p>Conducting side research for real estate financial products and investment strategies to gain insights into market trends and opportunities.</p>
-            <span>Market Analysis, Financial Research</span>
+            <h3>Pesquisa Imobiliária</h3>
+            <p>Pesquisa paralela sobre produtos financeiros e estratégias de investimento no setor imobiliário para insights de mercado.</p>
+            <span>Análise de Mercado, Pesquisa Financeira</span>
           </div>
         </div>
         <p class="github-link">
-          Check out my projects on <a href="https://www.github.com/NicholasDhm" class="accent-link">GitHub</a>.
+          Confira meus projetos no <a href="https://www.github.com/NicholasDhm" target="_blank" class="accent-link">GitHub</a>.
         </p>
       </section>
 
       <section id="education">
-        <h2>Education</h2>
-        <div class="education-container">
+        <h2>Educação</h2>
+        <div class="education-container">      
           <div class="education-card">
-            <div class="education-header">
+            <div class="edu-icon">
               <i class="fas fa-university"></i>
-              <h3>Federal University of Santa Catarina (UFSC)</h3>
             </div>
-            <p><strong>IT Degree (Ongoing)</strong></p>
-            <p>Expanding knowledge in software development, data structures, and system design while balancing real-world experience.</p>
+            <div class="edu-content">
+              <h3 class="edu-title">UFSC - Universidade Federal de Santa Catarina</h3>
+              <p class="edu-subtitle">Sistemas de Informação (em andamento)</p>
+              <p class="edu-description">
+                Aprofundando conhecimentos em desenvolvimento de software, estruturas de dados e design de sistemas, conciliando com experiência prática.
+              </p>
+            </div>
           </div>
-          
+      
           <div class="education-card">
-            <div class="education-header">
+            <div class="edu-icon">
               <i class="fas fa-certificate"></i>
-              <h3>Certifications & Courses</h3>
             </div>
-            <ul>
-              <li><strong>Udemy - SQL & RDBMS Certification:</strong> Mastered relational database concepts, normalization, and SQL queries.</li>
-              <li><strong>Angular University - Frontend Development:</strong> Learned Angular fundamentals before transitioning into professional work at Atomus.</li>
-            </ul>
+            <div class="edu-content">
+              <h3 class="edu-title">Certificações & Cursos</h3>
+              <ul class="edu-list">
+                <li><strong>Udemy - SQL & RDBMS:</strong> Consultas, modelagem, normalização e práticas com bancos relacionais.</li>
+                <li><strong>Angular University:</strong> Desenvolvimento frontend com foco em projetos práticos e escaláveis.</li>
+              </ul>
+            </div>
           </div>
-          
+      
           <div class="education-card">
-            <div class="education-header">
+            <div class="edu-icon">
               <i class="fas fa-briefcase"></i>
-              <h3>Professional Learning at Atomus</h3>
             </div>
-            <ul>
-              <li><strong>SQL & RDBMS:</strong> Applied database management skills in real projects.</li>
-              <li><strong>Angular:</strong> Built production-grade frontend applications.</li>
-              <li><strong>C#:</strong> Developed and maintained backend services in a full-stack role.</li>
-            </ul>
-          </div>
+            <div class="edu-content">
+              <h3 class="edu-title">Experiência Profissional - Atomus</h3>
+              <ul class="edu-list">
+                <li><strong>SQL & RDBMS:</strong> Criação e gestão de bancos de dados reais.</li>
+                <li><strong>Angular:</strong> Desenvolvimento de interfaces modernas para produção.</li>
+                <li><strong>C#:</strong> Backend em ambiente full-stack com foco em performance.</li>
+              </ul>
+            </div>
+          </div>      
         </div>
       </section>
-      
+
       <section id="skills">
-        <h2>Skills</h2>
+        <h2>Habilidades</h2>
         <div class="skills-flex">
           <div class="skill-block">JavaScript</div>
           <div class="skill-block">React & React Native</div>
@@ -150,91 +148,42 @@
           <div class="skill-block">C#</div>
           <div class="skill-block">TypeScript</div>
           <div class="skill-block">Node.js</div>
-          <div class="skill-block">SQL & Databases</div>
-          <div class="skill-block">Financial Modeling</div>
-          <div class="skill-block">Market Analysis</div>
-          <div class="skill-block">Entrepreneurship</div>
+          <div class="skill-block">SQL & Bancos de Dados</div>
+          <div class="skill-block">Modelagem Financeira</div>
+          <div class="skill-block">Análise de Mercado</div>
+          <div class="skill-block">Empreendedorismo</div>
         </div>
       </section>
-      
-      <footer id="contact">
-        <h2>Contact</h2>
+
+      <footer id="contact" class="contact-section">
+        <h2>Contato</h2>
         <address>
-          <p>Want to connect? Feel free to reach out!</p>
+          <p>Quer entrar em contato? Sinta-se à vontade para me enviar uma mensagem!</p>
           <p>
             Nicholas Derham<br>
-            📍 Florianópolis, Brazil<br>
+            📍 Florianópolis, Brasil<br>
             📧 <a href="mailto:nickderham.ufsc@gmail.com">nickderham.ufsc@gmail.com</a><br>
-            💼 <a href="https://www.linkedin.com/in/NicholasDerham">LinkedIn</a><br>
-            💻 <a href="https://www.github.com/NicholasDhm">GitHub</a>
+            💼 <a href="https://www.linkedin.com/in/NicholasDerham" target="_blank">LinkedIn</a><br>
+            💻 <a href="https://www.github.com/NicholasDhm" target="_blank">GitHub</a>
           </p>
         </address>
       </footer>
-    </div>
-  </section>
+    </main>
+  </div>
+
+  <script>
+    document.querySelectorAll('a.nav_item').forEach(link => {
+      link.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === 'html_dict.html') {
+          return;
+        }
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
-
-<script>
-  function navItemClick(route) {
-    const targetSection = document.getElementById(route);
-    targetSection.scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
-
-
-<!-- Conteúdo para a página
-A página criada deve conter:
-Definição do idioma como português brasileiro
-Título na aba do navegador
-Ícone na aba do navegador
-Cabeçalho com link para navegação pelo conteúdo da página
-Utilize as tags <header> e <nav>
-Verifique como criar links internos para elementos da sua página
-Uma barra lateral com informações relevantes
-Utilize a tag <aside>
-Exemplos de informações relevantes:
-Seu nome
-Sua foto
-Seu curso (SIN/CCO/etc) (com um link para a página do curso. . . )
-Seus interesses, linguagens e tecnologias preferidas
-Link para seu github
-Conteúdo para a página
-Um rodapé com informações de contato e links úteis (por ex. seu linkedin)
-Tente utilizar a tag <address>
-Uma área reservada para os conteúdos da página
-Utilize a tag <main> e tags <section>
-Nestes conteúdos coloque as seguintes sessões:
-Sobre mim
-Interesses
-Disciplinas cursadas
-Links para projetos públicos (se houver algum projeto seu no github ou outro
-serviço similar)
-Adicione outras informações que julgar importante!
-Dicionário de elementos HTML
-Crie uma segunda página contendo um dicionário de elementos HTML
-Nomeie a segunda página como html_dict.html
-Em um dos itens de navegação da página index.html, crie um link que leve para
-a página html_dict.html
-Adicione à página html_dict.html um dicionário de tags contendo as tags que
-você utilizou para definir o html de ambas as páginas (index.html e
-html_dict.html)
-Como entrada (chave) do dicionário, use o nome da tag
-Como valor, descreve para que serve a tag utilizada
-Estilize sua página
-Aproveite para estabelecer um layout para a sua página e busque como utilizar o
-CSS para chegar ao layout estabelecido
-Pense em alguma maneira criativa de estilizar a sua página, utilizando os seletores
-do CSS que estudamos
-Procure saber mais sobre as propriedades que podem ser estilizadas
-Vocês ainda aprenderão mais sobre CSS na aula 05
-Assim, poderão melhorar o layout da página na próxima aula prática (aula 06)
-Mantenha seu projeto salvo
-Preferencialmente, crie um projeto no git para manter sua página pessoal
-Se acostumem a criar repositórios até mesmo para pequenos projetos e exercícios de
-aula
-É muito mais simples do que ficar enviando arquivos por e-mail. . .
-A página desenvolvida poderá ser entregue na atividade avaliada 04
-Data de entrega: 15/04 (até 18:30).
-Continue melhorando a sua página pessoal e, futuramente, publique-a!
-Sem o dicionário de HTML -->
